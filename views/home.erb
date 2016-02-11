@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Create A Profile</title>
+        <style type="text/css">
+            body {
+                margin-top: 0;
+                text-align: center;
+            }
+            form {
+                display: inline-block;
+                font-family: Courier;
+                font-size: 20px;
+                background-color: rgb(162, 48, 32);
+                color: white;
+            }
+            .inputs {
+                margin: 20px;
+
+            }
+            label {
+                display: inline-block;
+                width: 457px;
+                text-align: left;
+            }
+            button {
+                font-size: 20px;
+                color: white;
+                font-family: Courier;
+                width: 755px;
+                height: 40px;
+                background-color: black;
+                border-color: black;
+            }
+            input {
+                font-family: Courier;
+                font-size: 20px;
+                height: 24px;
+            }
+            input:focus {
+                outline-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/profile">
+            <div class="inputs">
+                <label for="photo">
+                    Paste a photo URL for your profile
+                </label>
+                <input id="photo" name="photo">
+            </div>
+            <div class="inputs">
+                <label for="gamertag">What is your gamertag?</label>
+                <input id="gamertag "name="gamertag">
+            </div>
+            <div class="inputs">
+                <label for="game">What is your favorite Smash Bros game?</label>
+                <input id="game" name="game">
+            </div>
+            <div class="inputs">
+                <label for="main">What is your character main?</label>
+                <input id="main" name="main">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
